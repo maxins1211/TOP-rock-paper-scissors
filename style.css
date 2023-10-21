@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 20px 10px;
+}
+
+header {
+  text-align: center;
+  margin: 10px;
+}
+/* Section */
+
+button {
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button:hover {
+  transform: scale(0.9);
+}
+
+#rock {
+  background: url(images/noun-fist-477918.png) center;
+  background-size: 70px 70px;
+}
+
+#paper {
+  background: url(images/noun-hand-477922.png) center;
+  background-size: 70px 70px;
+}
+
+#scissors {
+  background: url(images/noun-scissors-477919.png);
+  background-size: 70px 70px;
+}
+
+.win {
+  border: green solid 3px;
+}
+.lose {
+  border: red solid 3px;
+}
+.draw {
+  border: #cccc00 solid 3px;
+}
+li {
+  list-style: none;
+  padding: 10px;
+}
+
+ul {
+  justify-self: center;
+}
+
+.grid h2 {
+  align-self: center;
+}
+.computer-choice {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  align-items: center;
+  justify-self: center;
+  background: url(images/noun-question-mark-447554.png) center;
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+}
+
+.computer-section {
+  width: 100%;
+}
+
+.computer-section .flex {
+  justify-content: space-between;
+}
+
+/* Result bar */
+.score-board {
+  max-width: 300px;
+  height: 200px;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* End screen */
+.end-screen {
+  width: 350px;
+  height: 250px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  bottom: 400px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 100;
+}
+
+.end-screen p {
+  margin-top: 50px;
+}
+
+.overlay.active {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.play-again {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  bottom: 30px;
+}
+/* Utilities */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 991px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.my-30 {
+  margin-top: 30px;
+}
+
+.grid {
+  gap: 10px 0;
+  display: grid;
+  grid-template-columns: 200px 600px;
+}
+
+@media (max-width: 667px) {
+  .grid {
+    grid-template-columns: 1fr 3fr;
+  }
+}
